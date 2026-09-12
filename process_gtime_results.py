@@ -5,6 +5,7 @@ from pathlib import Path
 DUCKDB_OUTPUT_PATH = Path("./data/duckdb.csv")
 POLARS_OUTPUT_PATH = Path("./data/polars.csv")
 PANDAS_OUTPUT_PATH = Path("./data/pandas.csv")
+PANDAS_ITER_OUTPUT_PATH = Path("./data/pandas_iter.csv")
 
 SECONDS_IN_MINUTE = 60
 
@@ -50,4 +51,5 @@ def print_stats(path: Path, name: str):
 
 print_stats(DUCKDB_OUTPUT_PATH, "DuckDB")
 print_stats(PANDAS_OUTPUT_PATH, "Pandas")
+print_stats(PANDAS_ITER_OUTPUT_PATH, "Pandas (chunked)")
 print_stats(POLARS_OUTPUT_PATH, "Polars")
