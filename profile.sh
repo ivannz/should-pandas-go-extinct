@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o pipefail
 
 # Script to run a Python script with iteration and warmup counts, capturing results in /usr/bin/time format, CPU%, and max RSS.
 
