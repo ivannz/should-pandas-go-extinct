@@ -11,9 +11,13 @@ POLARS_OUTPUT_PATH = Path("./data/polars_timeseries.csv")
 PANDAS_PATH = Path("./pandas_1brc.py")
 PANDAS_OUTPUT_PATH = Path("./data/pandas_timeseries.csv")
 
+PANDAS_ITER_PATH = Path("./pandas_1brc_iter.py")
+PANDAS_ITER_OUTPUT_PATH = Path("./data/pandas_iter_timeseries.csv")
+
 
 PROFILE_FIXTURES = [
     (PANDAS_PATH, PANDAS_OUTPUT_PATH),
+    (PANDAS_ITER_PATH, PANDAS_ITER_OUTPUT_PATH),
     # (POLARS_PATH, POLARS_OUTPUT_PATH),
     # (DUCKDB_PATH, DUCKDB_OUTPUT_PATH),
 ]
